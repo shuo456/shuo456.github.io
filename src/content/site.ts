@@ -20,7 +20,7 @@ export const site = {
   name: "Shuo Xu",
   role: "Ph.D. Student",
   affiliation: "School of Advanced Manufacturing and Robotics, Peking University",
-  email: "shuo.xu@stu.pku.edu.cn",
+  email: "sxu25@stu.pku.edu.cn",
   github: "https://github.com/shuo456",
   advisor: {
     name: "Prof. Zhiyong Sun",

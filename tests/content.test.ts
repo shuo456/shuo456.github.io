@@ -8,7 +8,7 @@ import { site } from "@/content/site";
 describe("approved site content", () => {
   it("uses Shuo Xu's exact identity and contact links", () => {
     expect(site.name).toBe("Shuo Xu");
-    expect(site.email).toBe("shuo.xu@stu.pku.edu.cn");
+    expect(site.email).toBe("sxu25@stu.pku.edu.cn");
     expect(site.github).toBe("https://github.com/shuo456");
     expect(site.advisor.name).toBe("Prof. Zhiyong Sun");
   });

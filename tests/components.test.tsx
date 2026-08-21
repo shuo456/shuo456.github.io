@@ -41,7 +41,7 @@ describe("global academic shell", () => {
     expect(screen.getByText("Safety-Critical Control")).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /email/i })).toHaveAttribute(
       "href",
-      "mailto:shuo.xu@stu.pku.edu.cn",
+      "mailto:sxu25@stu.pku.edu.cn",
     );
   });
 });

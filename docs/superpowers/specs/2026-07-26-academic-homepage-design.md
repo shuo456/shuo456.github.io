@@ -27,7 +27,7 @@ The implementation will follow a "PRISM Slim" approach:
 - Role: Ph.D. Student
 - Affiliation: School of Advanced Manufacturing and Robotics, Peking University
 - Location: Beijing, China
-- Email: `shuo.xu@stu.pku.edu.cn`
+- Email: `sxu25@stu.pku.edu.cn`
 - GitHub: `https://github.com/shuo456`
 - Research interests:
   - Robotics
