@@ -12,7 +12,7 @@
 
 - Keep the site English-only and light-first, with a user-selectable dark theme.
 - Use warm off-white, deep navy, and a restrained low-saturation Peking University red accent.
-- Use a blank 4:5 profile placeholder without a personal photograph.
+- Use the approved beach portrait in the 4:5 profile frame without altering its composition.
 - Do not invent biography, research, teaching, awards, service, travel, publication, or project facts.
 - Keep Teaching, Awards, Academic Service, and Travels accessible even when their approved content is currently empty.
 - Treat the supplied PDF and two MP4 files as public website assets.
@@ -32,7 +32,7 @@
 | Research routes | `src/app/publications/page.tsx`, `src/app/projects/page.tsx`, `src/app/projects/fma-cbf/page.tsx`, `src/components/video-demo.tsx` | Publication list, project index, FMA-CBF detail and media |
 | Personal routes | `src/app/travels/page.tsx`, `src/app/cv/page.tsx`, `src/components/education-timeline.tsx` | Travel route and web CV |
 | Empty academic routes | `src/app/teaching/page.tsx`, `src/app/awards/page.tsx`, `src/app/service/page.tsx`, `src/components/empty-state.tsx` | Honest empty states without fabricated achievements |
-| Public assets | `public/papers/fma-cbf-paper.pdf`, `public/media/ifac-case2-comparison.mp4`, `public/media/quadrotor-gate-comparison.mp4`, `public/media/unicycle-poster.png`, `public/media/quadrotor-poster.png` | Approved paper, videos, and poster frames |
+| Public assets | `public/profile/shuo-xu-portrait.jpg`, `public/papers/fma-cbf-paper.pdf`, `public/media/ifac-case2-comparison.mp4`, `public/media/quadrotor-gate-comparison.mp4`, `public/media/unicycle-poster.png`, `public/media/quadrotor-poster.png` | Approved portrait, paper, videos, and poster frames |
 | Verification | `tests/config.test.mjs`, `tests/content.test.ts`, `tests/components.test.tsx`, `scripts/validate-assets.mjs`, `scripts/validate-export.mjs` | Configuration, content, UI, media, and exported-route checks |
 | Publishing | `.github/workflows/pages.yml`, `.gitignore`, `README.md`, `NOTICE.md` | GitHub Pages workflow and maintainer documentation |
 
@@ -348,7 +348,7 @@ Desktop navigation shows the five primary routes plus a keyboard-operable More d
 
 - [ ] **Step 5: Implement the reusable profile sidebar**
 
-Render a blank 4:5 profile placeholder, identity, affiliation, advisor link, research chips, email, and GitHub.
+Render the approved 4:5 profile portrait, identity, affiliation, advisor link, research chips, email, and GitHub.
 
 - [ ] **Step 6: Establish the design tokens and document metadata**
 
@@ -443,6 +443,7 @@ git commit -m "feat: add home and publications pages"
 ## Task 5: Import Approved Assets and Build the FMA-CBF Project
 
 **Files:**
+- Create: `public/profile/shuo-xu-portrait.jpg`
 - Create: `public/papers/fma-cbf-paper.pdf`
 - Create: `public/media/ifac-case2-comparison.mp4`
 - Create: `public/media/quadrotor-gate-comparison.mp4`
@@ -475,7 +476,7 @@ Expected: FAIL because the component and public assets do not exist.
 
 - [ ] **Step 3: Copy only approved source assets**
 
-Copy these exact sources:
+Copy the approved portrait supplied in the conversation and these exact research sources:
 
 ```text
 D:\desktop\仿真实验\presentation\fma_cbf_share_site\output\fma-cbf-cloudbase-static\fma-cbf-paper.pdf
@@ -755,7 +756,7 @@ Serve `out/` locally and inspect all routes at desktop and mobile sizes. Verify:
 - No missing images or console errors
 - Light theme is the initial render
 - Dark theme persists after navigation/reload
-- Profile placeholder and video posters render correctly
+- Profile portrait and video posters render correctly
 - Both videos play and remain distinguishable
 
 - [ ] **Step 7: Review the repository diff**

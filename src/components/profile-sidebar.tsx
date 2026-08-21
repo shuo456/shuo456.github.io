@@ -1,4 +1,5 @@
 import { Github, Mail } from "lucide-react";
+import Image from "next/image";
 import { site } from "@/content/site";
 
 const emailHref = `mailto:${site.email}`;
@@ -6,11 +7,16 @@ const emailHref = `mailto:${site.email}`;
 export function ProfileSidebar() {
   return (
     <aside aria-label="Profile" className="profileSidebar">
-      <div
-        aria-label="Blank profile portrait"
-        className="portraitFrame"
-        role="img"
-      />
+      <div className="portraitFrame">
+        <Image
+          alt="Shuo Xu"
+          className="portrait"
+          height={2132}
+          priority
+          src="/profile/shuo-xu-portrait.jpg"
+          width={1706}
+        />
+      </div>
       <div className="profileCopy">
         <p className="eyebrow">{site.role}</p>
         <h1>{site.name}</h1>

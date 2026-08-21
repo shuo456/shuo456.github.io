@@ -40,10 +40,12 @@ Page components live under `src/app/` and reusable components under
 
 ## Public assets
 
+- Profile portrait: `public/profile/shuo-xu-portrait.jpg`
 - Paper PDF: `public/papers/fma-cbf-paper.pdf`
 - Research videos and posters: `public/media/`
 
-The paper and videos are intended to be publicly downloadable from the website.
+The portrait is used only as the profile avatar. The paper and videos are
+intended to be publicly downloadable from the website.
 
 ## GitHub Pages
 

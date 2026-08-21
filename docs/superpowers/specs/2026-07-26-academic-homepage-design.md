@@ -75,7 +75,7 @@ The desktop home page uses a two-column layout.
 
 Left column:
 
-- Blank 4:5 portrait placeholder
+- 4:5 profile portrait
 - Name
 - Role and affiliation
 - Research interest tags
@@ -87,7 +87,7 @@ Right column:
 - Selected Publication
 - News
 
-On small screens, the portrait placeholder and identity block move above the main content.
+On small screens, the portrait and identity block move above the main content.
 
 ### Publications
 
@@ -145,7 +145,7 @@ No travel photographs are available for the initial release. The route and navig
 
 > Stories coming soon.
 
-The profile placeholder will not be reused as a travel image.
+The profile portrait will not be reused as a travel image.
 
 ### CV
 
@@ -200,13 +200,12 @@ Dark mode remains available through a top-right theme toggle. It must not be the
 
 Typography must remain legible without relying on external font loading. System fallbacks are required.
 
-### Profile Placeholder
+### Profile Portrait
 
-The profile area uses a blank 4:5 placeholder:
+The supplied photograph is displayed in a 4:5 portrait frame:
 
-- Preserve the subject's upper body.
-- Retain both the face and the cartoon graduate above it where practical.
-- Do not reuse the placeholder in Travels.
+- Preserve the subject's face, hat, and upper body.
+- Do not reuse the portrait in Travels.
 - Provide descriptive alternative text.
 
 ### Cards and Motion
@@ -262,7 +261,7 @@ The local workspace currently has no authenticated GitHub CLI session. Local imp
 
 ## Error Handling and Fallbacks
 
-- The profile area remains a neutral blank placeholder.
+- The portrait asset is validated during the production build.
 - Video components show a poster, readable title, and direct file link if playback is unavailable.
 - Missing optional content does not render blank cards.
 - Teaching, Awards, Academic Service, and Travels use explicit restrained empty states.

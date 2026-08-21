@@ -31,10 +31,13 @@ describe("global academic shell", () => {
   it("renders verified identity, research interests, and contact links", () => {
     render(<ProfileSidebar />);
 
+    expect(screen.getByRole("img", { name: "Shuo Xu" })).toHaveAttribute(
+      "src",
+      expect.stringContaining("shuo-xu-portrait.jpg"),
+    );
     expect(
-      screen.getByRole("img", { name: "Blank profile portrait" }),
-    ).toBeInTheDocument();
-    expect(screen.queryByAltText("Shuo Xu")).not.toBeInTheDocument();
+      screen.queryByRole("img", { name: "Blank profile portrait" }),
+    ).not.toBeInTheDocument();
     expect(
       screen.getByRole("heading", { name: "Shuo Xu" }),
     ).toBeInTheDocument();
